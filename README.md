@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Create Project
+First create a new repository aka `react-todo`
+copy the html link of repo and clone to your computer locally
+run `creat-react-app` in the same directory you cloned the repo to
+```
+git clone https://github.com/Pironj/react-todo.git
+npx create-react-app
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
