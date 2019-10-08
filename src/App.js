@@ -15,7 +15,8 @@ class App extends Component {
   handleInput = e => {
     console.log('Input received');
   }
-  addItem = () => {
+  addItem = e => {
+    e.preventDefault();
     console.log('You added an item!');
   }
   render() {
@@ -23,6 +24,9 @@ class App extends Component {
       <div className="App">
         <TodoList 
           addItem={this.addItem}
+          handleInput={this.handleInput}
+          inputElement={this.inputElement}
+          currentItem={this.state.currentItem}
           />
       </div>
     );
