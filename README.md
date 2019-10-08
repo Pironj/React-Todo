@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Create Project
+## `Create Project`
 First create a new repository aka `react-todo`
 copy the html link of repo and clone to your computer locally
 run `creat-react-app` in the same directory you cloned the repo to

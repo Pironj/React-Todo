@@ -1,7 +1,21 @@
-.App {
-  text-align: center;
+body {
+  background-color: #282c34;
 }
 
+.App {
+  text-align: center;
+  margin-top: 15%;
+}
+/* add task button styling */
+button {
+  margin-left: 1%;
+  padding: 1%;
+  background-color: brown;
+}
+/* user text input field styling */
+input {
+  padding: 1%;
+}
 .App-logo {
   height: 40vmin;
 }
