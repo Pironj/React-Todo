@@ -20,7 +20,16 @@ class App extends Component {
   }
   // function that handles key presses
   handleInput = e => {
-    console.log('Input received');
+    // console.log('Input received');
+    const inputText = e.target.value
+    const currentItem = {
+      text: inputText,
+      key: Date.now(),
+    }
+    // set the state of currentItem to our new currentItem object we created that pulls the value of the input field as a variable inputText
+    this.setState({
+      currentItem
+    })
   }
   // function to handle when we click our add task button
   addItem = e => {
