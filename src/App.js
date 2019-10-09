@@ -34,7 +34,26 @@ class App extends Component {
   // function to handle when we click our add task button
   addItem = e => {
     e.preventDefault();
-    console.log('You added an item!');
+    // console.log('You added an item!');
+    // save state of currentItem as a new variable newItem
+    const newItem = this.state.currentItem
+    // check for a value for currentItem before adding item to our item array.
+    // do not want to add empty tasks to our todo list
+    if (newItem !== '') {
+      console.log(newItem);
+      // create a copy of item array and add newITem
+      const items = [...this.state.items, newItem]
+      // update state
+      this.setState({
+        // setState of item array to our newly updated copied item array.
+        items: items,
+        // Once we set the new state of our items array we want to clear the currentItem object for the next submit.
+        currentItem: {
+          text: '',
+          key: ''
+        }
+      })
+    }
   }
   render() {
     return (
