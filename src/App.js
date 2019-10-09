@@ -3,12 +3,17 @@ import './App.css';
 import TodoList from './components/TodoList'
 
 class App extends Component {
+  // create a reference to input field
+  inputElement = React.createRef()
   constructor() {
     super()
 
     this.state = {
       items: [],
-      currentItem: {text:'', key:''},
+      currentItem: {
+        text:'', 
+        key:''
+      },
     }
   }
     
